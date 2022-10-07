@@ -84,5 +84,36 @@ public class Main {
         for (int j = 1; j <= 10; j++) {
             System.out.println("2 * " + j + " = " + 2 * j);
         }
+        //Ex4 дополнительные задания
+        System.out.println("\nЗадание номер четыре");
+        String numbDevidedThree = "ping";
+        String numbDevidedFife = "pong";
+        for (int j = 1; j <= 30; j++) {
+            if (j % 3 == 0) {
+                if (j % 5 == 0) {
+                    System.out.println(j + ": " + numbDevidedThree + " " + numbDevidedFife);
+                } else {
+                    System.out.println(j + ": " + numbDevidedThree);
+                  }
+            } else if (j % 5 == 0) {
+                System.out.println(j + ": " + numbDevidedFife);
+              } else {
+                System.out.println(j + ": ");
+                }
+        }
+        //Ex5 дополнительные задания
+        System.out.println("\nЗадание номер пять");
+        int firstNumb = 0;
+        int secondNumb = 1;
+        int fibonachiNumbCount = 10;
+        int thirdNumb = 0;
+        System.out.printf("%d %d ", firstNumb, secondNumb);
+        for (int j = 2; j < fibonachiNumbCount; j++) {
+            thirdNumb = firstNumb + secondNumb;
+            firstNumb = secondNumb;
+            secondNumb = thirdNumb;
+            System.out.printf("%d ", thirdNumb);
+
+        }
     }
 }
